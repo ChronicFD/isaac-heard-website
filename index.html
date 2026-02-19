@@ -959,10 +959,10 @@
       </div>
     </div>
     <p class="contact-body">Want to <strong>commission art</strong>, collaborate, get notified about <strong>Ex Materia</strong>, or just talk sci-fi and Blerd culture? Send a message — always down to connect with the community.</p>
-    <form class="contact-form" onsubmit="return false;">
-      <input type="text" class="contact-input" placeholder="Your name"/>
-      <input type="email" class="contact-input" placeholder="Your email"/>
-      <textarea class="contact-input" placeholder="Your message…"></textarea>
+    <form class="contact-form" action="https://formspree.io/f/xkovvglv" method="POST">
+      <input type="text" name="name" class="contact-input" placeholder="Your name" required/>
+      <input type="email" name="email" class="contact-input" placeholder="Your email" required/>
+      <textarea name="message" class="contact-input" placeholder="Your message…" required></textarea>
       <button type="submit" class="btn btn-magenta" style="align-self:flex-start">Send It ↗</button>
     </form>
   </div>
