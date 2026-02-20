@@ -1054,5 +1054,20 @@
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
+
+<script>
+  // Image protection — disable right-click and drag on all images
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('contextmenu', e => e.preventDefault());
+      img.addEventListener('dragstart', e => e.preventDefault());
+    });
+    // Also block right-click on the whole page for good measure
+    document.addEventListener('contextmenu', e => {
+      if (e.target.tagName === 'IMG') e.preventDefault();
+    });
+  });
+</script>
+
 </body>
 </html>
