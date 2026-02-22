@@ -1,0 +1,52 @@
+# robots.txt — isaacaddisonheard.com
+# © 2026 Isaac Addison Heard. All rights reserved.
+
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+# Block all bots from images folder
+User-agent: *
+Disallow: /images/
+
+# Allow standard search indexing of pages
+User-agent: Googlebot
+Allow: /
+Disallow: /images/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /images/
